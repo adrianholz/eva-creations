@@ -74,7 +74,7 @@ bun dev
 
 Watch the YouTube video to learn how this project was put together:
 
-[![Ultimate Quick Stack](https://img.youtube.com/vi/1jJ5Z3QY9y4/0.jpg)](https://www.youtube.com/watch?v=1jJ5Z3QY9y4)
+[![The Best Tech Stack for Web Development in 2025](https://img.youtube.com/vi/BoUVIhtqjAw/0.jpg)](https://youtu.be/BoUVIhtqjAw)
 
 If you like the video, please subscribe to the channel!
 
