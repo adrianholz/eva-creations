@@ -22,7 +22,6 @@ export function CircularRotatingText({
   },
 }: CircularRotatingTextProps) {
   const radius = size / 2 - 50; // Reduced radius (was -30, now -50)
-  const circumference = 2 * Math.PI * radius;
 
   // Force exactly 3 repetitions with spacing
   const textWithSpacing = `${text}   `; // Three spaces for better separation
