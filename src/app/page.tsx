@@ -4,6 +4,9 @@ import { PageContainer } from "@/components/containers";
 import { CircularRotatingText } from "@/components/circular-text";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import Link from "next/link";
 
 export default function Home() {
   const [scale, setScale] = useState(1);
@@ -33,7 +36,7 @@ export default function Home() {
   return (
     <>
       <PageContainer>
-        <div className="flex flex-col justify-center items-center w-full max-w-[550px] mx-auto space-y-8">
+        <div className="flex flex-col justify-center items-center w-full max-w-[550px] mx-auto">
           {/* Circular rotating text */}
 
           <div
@@ -69,6 +72,91 @@ export default function Home() {
             />
           </div>
         </div>
+
+        <h2 className="text-center text-2xl max-w-[450px] mx-auto leading-relaxed font-medium">
+          I make clothes, jewelry, and some other cool things, also commissions
+          :)
+        </h2>
+
+        <Swiper speed={1200} slidesPerView={1} loop={true}>
+          <SwiperSlide>
+            <div className="flex w-full items-center justify-center gap-4 flex-col">
+              <Image
+                src="/clothes/dark-wash-1.webp"
+                alt="Dark Wash"
+                width={450}
+                height={450}
+                className="object-contain rounded-2xl"
+              />
+              <Image
+                src="/clothes/dark-wash-2.webp"
+                alt="Dark Wash"
+                width={450}
+                height={450}
+                className="object-contain rounded-2xl"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex w-full items-center justify-center gap-4 flex-col">
+              <Image
+                src="/clothes/cherry-sweater-1.webp"
+                alt="Cherry Sweather"
+                width={450}
+                height={450}
+                className="object-contain rounded-2xl"
+              />
+              <Image
+                src="/clothes/cherry-sweater-2.webp"
+                alt="Cherry Sweather"
+                width={450}
+                height={450}
+                className="object-contain rounded-2xl"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="flex w-full items-center justify-center gap-4 flex-col">
+              <Image
+                src="/clothes/greek-myth-1.webp"
+                alt="Greek Myth"
+                width={450}
+                height={450}
+                className="object-contain rounded-2xl"
+              />
+              <Image
+                src="/clothes/greek-myth-2.webp"
+                alt="Greek Myth"
+                width={450}
+                height={450}
+                className="object-contain rounded-2xl"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+
+        <Link
+          href="https://www.instagram.com/eva.s_creations/"
+          target="_blank"
+          className="flex flex-col items-center justify-center gap-2"
+        >
+          <Image
+            src="/instagram.svg"
+            alt="Instagram"
+            width={50}
+            height={50}
+            className="object-contain rounded-2xl mx-auto"
+          />
+          <p className="text-center">Give me a follow :)</p>
+        </Link>
+
+        <p className="text-center text-sm pb-12">
+          Copyright © {new Date().getFullYear()}{" "}
+          <Link href="https://andrix.design" target="_blank">
+            Andrix Design
+          </Link>
+        </p>
       </PageContainer>
     </>
   );
