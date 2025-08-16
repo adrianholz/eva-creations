@@ -80,7 +80,8 @@ export default function Home() {
 
         <Swiper speed={1200} slidesPerView={1} loop={true}>
           <SwiperSlide>
-            <div className="flex w-full items-center justify-center gap-4 flex-col">
+            <div className="flex w-full items-center px-4 pt-4 justify-center gap-4 flex-col">
+              <h3 className="text-5xl">Dark Wash</h3>
               <Image
                 src="/clothes/dark-wash-1.webp"
                 alt="Dark Wash"
@@ -98,38 +99,40 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex w-full items-center justify-center gap-4 flex-col">
+            <div className="flex w-full items-center px-4 pt-4 justify-center gap-4 flex-col">
+              <h3 className="text-5xl">Cherry Sweather</h3>
               <Image
                 src="/clothes/cherry-sweater-1.webp"
                 alt="Cherry Sweather"
-                width={450}
-                height={450}
+                width={650}
+                height={650}
                 className="object-contain rounded-2xl"
               />
               <Image
                 src="/clothes/cherry-sweater-2.webp"
                 alt="Cherry Sweather"
-                width={450}
-                height={450}
+                width={650}
+                height={650}
                 className="object-contain rounded-2xl"
               />
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="flex w-full items-center justify-center gap-4 flex-col">
+            <div className="flex w-full items-center px-4 pt-4 justify-center gap-4 flex-col">
+              <h3 className="text-5xl">Greek Myth</h3>
               <Image
                 src="/clothes/greek-myth-1.webp"
                 alt="Greek Myth"
-                width={450}
-                height={450}
+                width={600}
+                height={600}
                 className="object-contain rounded-2xl"
               />
               <Image
                 src="/clothes/greek-myth-2.webp"
                 alt="Greek Myth"
-                width={450}
-                height={450}
+                width={600}
+                height={600}
                 className="object-contain rounded-2xl"
               />
             </div>
